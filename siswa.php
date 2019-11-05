@@ -24,7 +24,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard CBT</title>
+    <title>Dashboard CBT - CLA</title>
     <meta name="description" content="Dashboard CBT">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
