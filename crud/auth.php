@@ -9,6 +9,4 @@
             'kunci' => 'sister',
         ]
     ]);
-
-    $result = json_decode($response->getBody()->getContents());
 ?>

@@ -1,18 +1,4 @@
-<?php
-    require 'vendor/autoload.php';
-
-    use GuzzleHttp\Client;
-
-    $client = new Client();
-    $response = $client->request('GET', 'https://tugas.ammarprojects.com/Sister/api/CLA', [
-        'query' => [
-            'kunci' => 'sister',
-        ]
-    ]);
-
-    $result = json_decode($response->getBody()->getContents(), true);
-    $result = $result['data'];
-?>
+<?php include "crud/readSiswa.php   "?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
