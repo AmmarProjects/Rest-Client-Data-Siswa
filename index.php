@@ -35,11 +35,11 @@
             <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="dashboard.html"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
+                        <a href="index.php"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
                     <li class="menu-title">Data Siswa</li><!-- /.menu-title -->
                     <li >
-                        <a href="siswa.html"><i class="menu-icon ti-clipboard"></i>Tabel </a>
+                        <a href="siswa.php"><i class="menu-icon ti-clipboard"></i>Tabel </a>
                     </li>
 
 
