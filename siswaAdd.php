@@ -25,4 +25,6 @@
     ]
 ]);
 
+header("location:tambahSiswa.php");
+
 ?>

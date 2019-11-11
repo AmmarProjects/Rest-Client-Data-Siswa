@@ -112,10 +112,9 @@
                                 <strong class="card-title">Tambahkan Siswa</strong>
                             </div>
                             <div class="login-form">
-                                <form action="guzzleAdd.php" method="post">
+                                <form action="siswaAdd.php" method="post">
                                     <div class="form-group">
                                         <label>Nama Siswa</label>
-<<<<<<< HEAD
                                         <input type="text" class="form-control" placeholder="Masukan Nama Siswa" name="Nama">
                                     </div>
                                     <div class="form-group">
@@ -138,11 +137,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Sekolah</label>
-<<<<<<< HEAD
                                         <input type="text" class="form-control" placeholder="Masukan Nama Sekolah" name="Sekolah">
-=======
-                                        <input type="text" class="form-control" placeholder="Masukan Nama Sekolah" id="Sekolah">
->>>>>>> ad9b8688f641dd1f770b5cf8bf58c90d478659ed
                                     </div>
                                     <button type="Simpan" class="btn btn-primary btn-flat m-b-30 m-t-30">Simpan</button>
                                 </form>
