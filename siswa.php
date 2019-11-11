@@ -1,4 +1,8 @@
-<?php include "crud/siswa/readSiswa.php   "?>
+<?php
+    include "crud/siswa/readSiswa.php";
+    include "rsa.php";
+
+?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -104,7 +108,7 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <a href="#" class="btn btn-primary mb-4" data-toggle="modal" data-target="#modalTambah"><i
+                        <a href="tambahSiswa.php" class="btn btn-primary mb-4"><i
                                 class="ti-plus"></i>&nbsp;Tambahkan Siswa</a>
                         <div class="card">
                             <div class="card-header">
@@ -130,11 +134,11 @@
                                                 echo'
                                                 <tr>
                                             <td>'.$data["id"].'</td>
-                                            <td>'.$data["nama"].'</td>
-                                            <td>'.$data["nisn"].'</td>
-                                            <td>'.$data["ttl"].'</td>
+                                            <td>'.decrypt($data["nama"],$private_secret_key).'</td>
+                                            <td>'.decrypt($data["nisn"],$private_secret_key).'</td>
+                                            <td>'.decrypt($data["ttl"],$private_secret_key).'</td>
                                             <td>'.$data["jurusan"].'</td>
-                                            <td>'.$data["sekolah"].'</td>
+                                            <td>'.decrypt($data["sekolah"],$private_secret_key).'</td>
                                             <td>
                                                 <div class="row m-1">
                                                     <div class="col-6 m-1">
@@ -177,102 +181,6 @@
     </div><!-- /#right-panel -->
     <!-- Right Panel -->
 
-    <!-- MODAL TAMBAH SISWA -->
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true" id="modalTambah">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="container p-4">
-                    <div class="form-group">
-                        <label for="company" class=" form-control-label">Nama</label><input type="text" id="company"
-                            placeholder="Masukan Nama" class="form-control">
-                    </div>
-                    <div class="row">
-                        <div class=col>
-                            <div class="form-group">
-                                <label for="company" class=" form-control-label">NISN</label><input type="text"
-                                    id="company" placeholder="Masukan NISN" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="company" class=" form-control-label">TTL</label><input type="text"
-                                    id="company" placeholder="Masukan TTL" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="street" class=" form-control-label">Jurusan</label>
-                                <select name="select" id="TambaSiswa" class="form-control">
-                                    <option value="0">--Pilih Jurusan--</option>
-                                    <option value="MIA">MIA</option>
-                                    <option value="IIS">IIS</option>
-                                    <option value="IBB">IBB</option>
-                                    <option value="IIK">IIK</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="company" class=" form-control-label">Sekolah</label><input type="text"
-                                    id="company" placeholder="Masukan Nama Sekolah" class="form-control">
-                            </div>
-                            <div class="modal-footer">
-                                <p>
-                                    <button type="button" class="btn btn-primary">Simpan</button>
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- /MODALTAMBAH SISWA -->
-
-        <!-- MODAL UBAH SISWA -->
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-            aria-hidden="true" id="modalTambah">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="container p-4">
-                        <div class="form-group">
-                            <label for="company" class=" form-control-label">Nama</label><input type="text" id="company"
-                                placeholder="Masukan Nama" class="form-control">
-                        </div>
-                        <div class="row">
-                            <div class=col>
-                                <div class="form-group">
-                                    <label for="company" class=" form-control-label">NISN</label><input type="text"
-                                        id="company" placeholder="Masukan NISN" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="company" class=" form-control-label">TTL</label><input type="text"
-                                        id="company" placeholder="Masukan TTL" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="street" class=" form-control-label">Jurusan</label>
-                                    <select name="select" id="TambaSiswa" class="form-control">
-                                        <option value="0">--Pilih Jurusan--</option>
-                                        <option value="MIA">MIA</option>
-                                        <option value="IIS">IIS</option>
-                                        <option value="IBB">IBB</option>
-                                        <option value="IIK">IIK</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="company" class=" form-control-label">Sekolah</label><input type="text"
-                                        id="company" placeholder="Masukan Nama Sekolah" class="form-control">
-                                </div>
-                                <div class="modal-footer">
-                                    <p>
-                                        <button type="button" class="btn btn-primary">Simpan</button>
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Batal</button>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- /MODAL UBAH SISWA -->
 </body>
 
 <!-- Scripts -->

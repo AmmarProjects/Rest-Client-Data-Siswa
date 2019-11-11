@@ -45,7 +45,7 @@
                     </li>
                     <li class="menu-title">Data Siswa</li><!-- /.menu-title -->
                     <li class="active">
-                        <a href="siswa.html"><i class="menu-icon ti-clipboard"></i>Tabel </a>
+                        <a href="siswa.php"><i class="menu-icon ti-clipboard"></i>Tabel </a>
                     </li>
 
 
@@ -114,7 +114,7 @@
                                 <form>
                                     <div class="form-group">
                                         <label>Nama Siswa</label>
-                                        <input type="email" class="form-control" placeholder="Masukan Nama Siswa">
+                                        <input type="text" class="form-control" placeholder="Masukan Nama Siswa" id="NISN">
                                     </div>
                                     <div class="form-group">
                                         <label>NISN</label>

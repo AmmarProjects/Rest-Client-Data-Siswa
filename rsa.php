@@ -1,4 +1,3 @@
-<h1 style="text-align: center;">Enkripsi RSA</h1>
 <?php
   function encrypt($message, $encryption_key){
     $key = hex2bin($encryption_key);
@@ -30,10 +29,10 @@
     return $plaintext;
   }
   
-  
-  $original_string = "Cobaaaaaaa";
   $private_secret_key = 'fed5de04cbba88aae4fa4b1d370dde5c' ;
-  $encrypted = encrypt($original_string,$private_secret_key);
-  echo '<h3>Asli : '.$original_string.'</h3>';
-  echo '<h3>Enkripsi : '.$encrypted.'</h3>';
-  echo '<h3>Dekripsi : '.decrypt($encrypted,$private_secret_key).'</h3>';
+  // $original_string = "Cobaaaaaaa";
+  // $encrypted = encrypt($original_string,$private_secret_key);
+  // echo '<h3>Asli : '.$original_string.'</h3>';
+  // echo '<h3>Enkripsi : '.$encrypted.'</h3>';
+  // echo '<h3>Dekripsi : '.decrypt($encrypted,$private_secret_key).'</h3>';
+  ?>
