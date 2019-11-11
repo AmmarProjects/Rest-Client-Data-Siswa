@@ -25,6 +25,6 @@
     ]
 ]);
 
-header("location:tambahSiswa.php");
+header("location:siswa.php");
 
 ?>
