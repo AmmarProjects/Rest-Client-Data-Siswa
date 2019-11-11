@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -111,32 +112,32 @@
                                 <strong class="card-title">Tambahkan Siswa</strong>
                             </div>
                             <div class="login-form">
-                                <form>
+                                <form action="guzzleAdd.php" method="post">
                                     <div class="form-group">
                                         <label>Nama Siswa</label>
-                                        <input type="text" class="form-control" placeholder="Masukan Nama Siswa" id="NISN">
+                                        <input type="text" class="form-control" placeholder="Masukan Nama Siswa" name="Nama">
                                     </div>
                                     <div class="form-group">
                                         <label>NISN</label>
-                                        <input type="email" class="form-control" placeholder="Masukan NISN">
+                                        <input type="text" class="form-control" placeholder="Masukan NISN" name="NISN">
                                     </div>
                                     <div class="form-group">
                                         <label>TTL</label>
-                                        <input type="email" class="form-control" placeholder="Masukan TTL">
+                                        <input type="text" class="form-control" placeholder="Masukan TTL" name="TTL">
                                     </div>
                                     <div class="form-group">
                                         <label for="street" class=" form-control-label">Jurusan</label>
-                                        <select name="select" id="TambaSiswa" class="form-control">
+                                        <select name="Jurusan" class="form-control">
                                             <option value="0">--Pilih Jurusan--</option>
-                                            <option value="MIA">MIA</option>
-                                            <option value="IIS">IIS</option>
-                                            <option value="IBB">IBB</option>
-                                            <option value="IIK">IIK</option>
+                                            <option value="1">MIA</option>
+                                            <option value="2">IIS</option>
+                                            <option value="3">IBB</option>
+                                            <option value="4">IIK</option>
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <label>Sekolah</label>
-                                        <input type="email" class="form-control" placeholder="Masukan Nama Sekolah">
+                                        <input type="text" class="form-control" placeholder="Masukan Nama Sekolah" name="Sekolah">
                                     </div>
                                     <button type="Simpan" class="btn btn-primary btn-flat m-b-30 m-t-30">Simpan</button>
                                 </form>
