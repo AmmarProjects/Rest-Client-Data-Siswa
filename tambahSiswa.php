@@ -114,19 +114,19 @@
                                 <form>
                                     <div class="form-group">
                                         <label>Nama Siswa</label>
-                                        <input type="text" class="form-control" placeholder="Masukan Nama Siswa" id="NISN">
+                                        <input type="text" class="form-control" placeholder="Masukan Nama Siswa" id="Nama">
                                     </div>
                                     <div class="form-group">
                                         <label>NISN</label>
-                                        <input type="email" class="form-control" placeholder="Masukan NISN">
+                                        <input type="text" class="form-control" placeholder="Masukan NISN" id="NISN">
                                     </div>
                                     <div class="form-group">
                                         <label>TTL</label>
-                                        <input type="email" class="form-control" placeholder="Masukan TTL">
+                                        <input type="text" class="form-control" placeholder="Masukan TTL" id="TTL">
                                     </div>
                                     <div class="form-group">
                                         <label for="street" class=" form-control-label">Jurusan</label>
-                                        <select name="select" id="TambaSiswa" class="form-control">
+                                        <select name="select" id="Jurusan" class="form-control">
                                             <option value="0">--Pilih Jurusan--</option>
                                             <option value="MIA">MIA</option>
                                             <option value="IIS">IIS</option>
@@ -136,7 +136,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Sekolah</label>
-                                        <input type="email" class="form-control" placeholder="Masukan Nama Sekolah">
+                                        <input type="text" class="form-control" placeholder="Masukan Nama Sekolah" id="Sekolah">
                                     </div>
                                     <button type="Simpan" class="btn btn-primary btn-flat m-b-30 m-t-30">Simpan</button>
                                 </form>
