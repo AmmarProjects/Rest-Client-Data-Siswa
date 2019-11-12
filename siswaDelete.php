@@ -5,7 +5,7 @@
 
     $ID =  $_GET['id'];
 
-    $url = "https://tugas.ammarprojects.com/Sister/api/CLA";
+    $url = "https://tugas.ammarprojects.com/Sister/CLA/api/CLA";
 
     $response = $client->delete($url, [
     'form_params' => [

@@ -11,7 +11,7 @@
     $Sekolah =  encrypt($_POST['Sekolah'],$private_secret_key);
     $TTL =  encrypt($_POST['TTL'],$private_secret_key);
 
-    $url = "https://tugas.ammarprojects.com/Sister/api/CLA";
+    $url = "https://tugas.ammarprojects.com/Sister/CLA/api/CLA";
 
     $response = $client->put($url, [
     'form_params' => [

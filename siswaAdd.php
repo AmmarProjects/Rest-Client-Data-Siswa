@@ -11,7 +11,7 @@
     $TTL =  encrypt($_POST['TTL'],$private_secret_key);
     
 
-    $url = "https://tugas.ammarprojects.com/Sister/api/CLA";
+    $url = "https://tugas.ammarprojects.com/Sister/CLA/api/CLA";
 
     $response = $client->request('POST', $url, [
     'form_params' => [

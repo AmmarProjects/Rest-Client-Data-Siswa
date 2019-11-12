@@ -3,7 +3,7 @@
 
     $client = new \GuzzleHttp\Client();
     
-    $response = $client->request('GET', 'https://tugas.ammarprojects.com/Sister/api/CLA', [
+    $response = $client->request('GET', 'https://tugas.ammarprojects.com/Sister/CLA/api/CLA', [
        'query' => [
            'kunci' => 'sister',
         ]
